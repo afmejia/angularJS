@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AngularJS services</title>
+  <script
+    src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.11/angular.js">
+  </script>
+  <script src="app6.js"></script>
+</head>
+<body>
+  <div ng-app="app">
+    <h1>Services</h1>
+
+    <div ng-controller="ListCtrl as list">
+      <p ng-repeat="message in list.messages">
+        {{ messages.id }}: {{ messages.text }}
+      </p>
+    </div>
+  </div>
+</body>
+</html>
