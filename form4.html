@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Custom validation</title>
+</head>
+<body ng-app='app'>
+  <form  name="form" class="css-form"  novalidate>
+    <div>
+      <label>
+        Size (integer 0 - 10):
+        <input type="number" name="size" ng-model="size" min="0" max="10"
+          integer/>{{size}}
+      </label>
+      <br />
+      <span ng-show="form.size.$error.integer">The value is not a valid integer</span>
+    </div>
+  </form>
+  <script
+  src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.11/angular.js">
+  </script>
+  <script src="app10.src"></script>
+</body>
+</html>
